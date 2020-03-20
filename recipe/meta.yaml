@@ -1,5 +1,5 @@
 {% set name = "spleeter" %}
-{% set version = "1.4.9" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    sha256: 83a8e287aacf56e99e6443c6f4f5d333a229e9edc8a0b5c0d8fbf1f164e7dbb0
+    sha256: c98331ce1e9db5cd686a5c4856c196654291ea90447caa9676a3869f37934ed4
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<36 or py>37]
 
 requirements:
@@ -41,7 +41,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'The Deezer source separation library with pretrained models based on tensorflow.'
+  summary: The Deezer source separation library with pretrained models based on tensorflow.
   doc_url: https://github.com/deezer/spleeter/wiki
   dev_url: https://github.com/deezer/spleeter
 
