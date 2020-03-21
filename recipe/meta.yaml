@@ -27,7 +27,7 @@ requirements:
     - pandas ==0.25.1
     - ffmpeg-python
     - norbert
-    - librosa==0.7.2
+    - librosa ==0.7.2
 
 test:
   imports:
