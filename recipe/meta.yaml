@@ -23,10 +23,11 @@ requirements:
     - requests
     - setuptools
     - importlib_resources  # [py<37]
-    - tensorflow ==1.14.0
-    - pandas ==0.25.1
+    - tensorflow ==1.15
+    - pandas
     - ffmpeg-python
     - norbert
+    - librosa
 
 test:
   imports:
