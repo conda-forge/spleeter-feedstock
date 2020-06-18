@@ -10,9 +10,11 @@ source:
     sha256: 207593cc75e8a97d7ddf8e548c026cc4a9f77934539ea581985473598771cb29
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<36 or py>37]
+  entry_points:
+    - spleeter = spleeter.__main__:entrypoint
 
 requirements:
   host:
