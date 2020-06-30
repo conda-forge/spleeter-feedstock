@@ -10,7 +10,7 @@ source:
     sha256: 207593cc75e8a97d7ddf8e548c026cc4a9f77934539ea581985473598771cb29
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<36 or py>37]
   entry_points:
@@ -23,13 +23,16 @@ requirements:
   run:
     - python
     - requests
-    - setuptools
+    - setuptools>=41.0.0
     - importlib_resources  # [py<37]
     - tensorflow ==1.15
-    - pandas
-    - ffmpeg-python
-    - norbert
-    - librosa
+    - tensorflow-estimator ==1.15.1
+    - pandas ==0.25.1
+    - ffmpeg-python ==0.2.0
+    - norbert ==0.2.1
+    - librosa ==0.7.2
+    - numba==0.48.0
+
 
 test:
   imports:
