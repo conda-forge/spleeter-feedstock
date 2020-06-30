@@ -26,7 +26,7 @@ requirements:
     - setuptools
     - importlib_resources  # [py<37]
     - tensorflow ==1.15
-    - tensorflow-estimator ==1.15
+    - tensorflow-estimator ==1.15.1
     - pandas
     - ffmpeg-python
     - norbert
