@@ -5,7 +5,7 @@ Home: https://github.com/deezer/spleeter
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: The Deezer source separation library with pretrained models based on tensorflow.
 
