@@ -12,7 +12,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [py<36 or py>38]
+  skip: true  # [py<37 or py>38]
   entry_points:
     - spleeter = spleeter.__main__:entrypoint
 
@@ -24,6 +24,9 @@ requirements:
     - python
     - requests
     - setuptools
+    - libgfortran-ng >=7,<8.0a0
+    - libgfortran4 >=7.5.0
+    - libblas >=3.8.0,<4.0a0
     - numpy <1.19.0,>=1.16.0
     - scipy ==1.4.1
     - importlib_resources  # [py<37]
